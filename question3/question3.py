@@ -38,4 +38,13 @@ plt.figure(2)
 plt.plot(freqs, fftabs)
 
 plt.show()
-#this is a test sound for cse three thousand and fourty eight introudction to signal and systems and my sound is loud and clear
+
+# Even though we trim the frequency we can still hear the voice
+# because high and low frequency are most likely either the voices
+# that we are not able to hear or the voices that we call as noices
+# so after trim operation, that is why we can still the message that
+# is in the given wav file. However the low and high filter frequncies
+# depends on the signal, also depends on the voice level and gender.
+
+# Wav file contains following text :
+# this is a test sound for cse three thousand and fourty eight introudction to signal and systems and my sound is loud and clear
