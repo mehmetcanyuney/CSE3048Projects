@@ -100,7 +100,7 @@ for i in range(2,6,1):
     mt = MT(avg_train)
     const_denomitator = constCalc(avg_train, mt)
 
-    pixel_jump = 50
+    pixel_jump = 30
     similarities = []
     for i in range(0, (len(image) - len(avg_train)), pixel_jump):
         for j in range(0, (len(image[0]) - len(avg_train[0])), pixel_jump):
