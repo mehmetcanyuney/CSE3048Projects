@@ -1,9 +1,10 @@
-laplacian_kernel = fspecial("laplacian", 0.5);
-gaussian_kernel = fspecial("gaussian", 5, 5);
-sobel_kernel = fspecial("sobel");
-motion_kernel = fspecial("motion", 40, 135);
+laplacian_kernel = fspecial('laplacian', 0.5);
+gaussian_kernel = fspecial('gaussian', 5, 5);
+sobel_kernel = fspecial('sobel');
+motion_kernel = fspecial('motion', 40, 135);
 
-image = imread('cameraman.tif');
+% converting to double due to not excedding 256
+image = im2double(imread('cameraman.tif'));
 
 imwrite(convolution(image, laplacian_kernel, 0), 'zero-lablacian.png')
 imwrite(convolution(image, gaussian_kernel, 0), 'zero-gaussian.png')
