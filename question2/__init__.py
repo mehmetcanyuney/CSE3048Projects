@@ -84,7 +84,7 @@ initFilters()
 # creates the average template by taking average of given 4 train image
 createAverageTemplate()
 
-for i in range(2,6,1):
+for i in range(2,3,1):
     input_path = "input" + str(i) + ".jpg"
     output_path = input_path.replace('input', 'output')
     print(input_path)
