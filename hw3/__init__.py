@@ -48,6 +48,7 @@ plt.plot(freqs, fftabs2)
 
 ifftdata2 = ifft(fftdata2)
 modulator2 = np.sin(2.0 * np.pi * 9140630 * times)
+# modulator2 = np.sin(2.0 * np.pi * 7000 * times)
 res2 = []
 for i in range(len(ifftdata2)):
     res2.append(ifftdata2[i] * modulator2[i])
@@ -79,6 +80,7 @@ plt.plot(freqs, fftabs3)
 
 ifftdata3 = ifft(fftdata3)
 modulator3 = np.sin(2.0 * np.pi * 64070 * times)
+# modulator3 = np.sin(2.0 * np.pi * 7000 * times)
 res3 = []
 for i in range(len(ifftdata3)):
     res3.append(ifftdata3[i] * modulator3[i])
